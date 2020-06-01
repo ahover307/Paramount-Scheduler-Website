@@ -1,0 +1,12 @@
+
+div.main {
+    background-color: lightgray;
+    text-align: center;
+    width: initial;
+    margin: 20px;
+    margin-inside: 10px;
+}
+
+span {
+    display: block;
+}
