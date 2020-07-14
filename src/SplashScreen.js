@@ -1,12 +1,10 @@
 import React from 'react';
 import ParamountLogo from "./png/ParamountLogo.png";
-import './SplashScreen.css'
-
 
 const SplashScreen = () => {
     return (
         <header className="App-header">
-            <img src={ParamountLogo} className="App-logo" alt="logo"/>
+            <img src={ParamountLogo} alt="logo"/>
             <p className="tagg">
                 Future page for Paramount Sports Complex Party Scheduler
             </p>

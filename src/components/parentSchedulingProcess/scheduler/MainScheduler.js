@@ -6,7 +6,6 @@ import PartyAreaComponent from "./PartyAreaComponent";
 import M from "materialize-css";
 import {Collapsible, CollapsibleItem, Icon} from 'react-materialize'
 // import * as firebase from "firebase";
-import emailjs from 'emailjs-com'
 import Calendar from "./CalendarComponent";
 
 class MainScheduler extends Component {
