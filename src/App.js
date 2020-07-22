@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 // import logo from './logo.svg';
 import './App.css';
-import myAppBar from "./components/navbar/myAppBar";
+import MenuAppBar from "./components/navbar/myAppBar";
 // import PartyDescriptionPage from "./components/info/PartyDescriptionPage";
 // import ParentScheduler from "./components/parentSchedulingProcess/ParentScheduler";
 import SplashScreen from "./SplashScreen";
@@ -17,7 +17,7 @@ class App extends Component {
 
                 {/*</header>*/}
 
-                <myAppBar/>
+                <MenuAppBar/>
 
                 <SplashScreen/>
                 {/*<Router>*/}

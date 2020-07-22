@@ -167,3 +167,7 @@ export function startAndEndTimesFromIndex(timesArray) {
         return 'Empty time list';
     }
 }
+
+export function colorPurple() {
+    return '#653487'
+}
