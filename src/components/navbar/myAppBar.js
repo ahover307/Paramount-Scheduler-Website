@@ -8,6 +8,8 @@ import MenuIcon from '@material-ui/icons/Menu';
 import ParamountLogo from "../../png/ParamountLogo.png";
 import {colorPurple} from "../globalFunctions"
 
+//https://material-ui.com/components/app-bar/
+
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,

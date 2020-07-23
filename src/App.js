@@ -1,33 +1,33 @@
 import React, {Component} from 'react';
-// import logo from './logo.svg';
 import './App.css';
 import MenuAppBar from "./components/navbar/myAppBar";
-// import PartyDescriptionPage from "./components/info/PartyDescriptionPage";
+import PartyDescriptionPage from "./components/info/PartyDescriptionPage";
 // import ParentScheduler from "./components/parentSchedulingProcess/ParentScheduler";
 import SplashScreen from "./SplashScreen";
-
-// import {Route, Router, Switch} from 'react-router-dom'
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import {MuiPickersUtilsProvider} from "@material-ui/pickers";
+import MomentUtils from "@date-io/moment";
+import InformationComponent from "./components/parentSchedulingProcess/scheduler/InformationComponent";
 
 class App extends Component {
     render() {
         return (
-            <div className="App">
-                {/*<header className="App-header">*/}
-                {/*    <img src={logo} className="App-logo" alt="logo"/>*/}
+            <MuiPickersUtilsProvider utils={MomentUtils}>
+                <div className="App">
+                    {/*<header className="App-header"></header>*/}
 
-                {/*</header>*/}
+                    <MenuAppBar/>
 
-                <MenuAppBar/>
+                    <Router>
+                        <Switch>
+                            <Route exact path={'/'}> <SplashScreen/> </Route>
+                            <Route path={'/description'}> <PartyDescriptionPage/> </Route>
+                            <Route path={'/scheduler'}> <InformationComponent/> </Route>
+                        </Switch>
+                    </Router>
 
-                <SplashScreen/>
-                {/*<Router>*/}
-                {/*            <Switch>*/}
-                {/*                <Route exact path={'/'}> <SplashScreen/> </Route>*/}
-                {/*                <Route path={'/description'}> <PartyDescriptionPage/> </Route>*/}
-                {/*                /!*<Route path={'/scheduler'}> <ParentScheduler/> </Route>*!/*/}
-                {/*            </Switch>*/}
-                {/*</Router>*/}
-            </div>
+                </div>
+            </MuiPickersUtilsProvider>
         );
     }
 }
